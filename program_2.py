@@ -10,13 +10,21 @@
 def word_separator(sentence):
 
     new_sentence = ""
-    #    Add your logic here
 
+
+    new_sentence += sentence[0]
+    #    Add your logic here
+    for i in range(1, len(sentence)):
+        char = sentence[i]
+
+        if char.isupper():
+            new_sentence += ' '
+        new_sentence += char
     return new_sentence.strip()
 
 # Example usage
 
-sentence = "StopAndSmellTheRoses"
+sentence = input('Enter a sentence with no spaces and uppercase letters: ')
 
 new_sentence = word_separator(sentence)
 

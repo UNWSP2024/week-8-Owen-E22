@@ -9,6 +9,20 @@ def initials_generator(personsName):
 
     personsInitials = ""
     #    Add your logic here
+    for i in range(1, len(personsName)):
+
+        char = personsName[i]
+
+        if char.isupper():
+            personsInitials = personsInitials + char + '.' + ' '
+
+
+
+
+
+
+
+
 
     return personsInitials.strip()
 
